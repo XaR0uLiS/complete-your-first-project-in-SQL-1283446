@@ -20,4 +20,5 @@ on Orders.OrderID = OrderItem.OrderID
 where OrderItemID is null;
 
 select * from Orders
-where OrderID = 1044;
+left join OrderItem on Orders.OrderID = OrderItem.OrderID
+where Orders.OrderID = 1044;

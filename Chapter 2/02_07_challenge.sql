@@ -7,3 +7,7 @@ left join OrderItem ordt
 on ord.OrderID = ordt.OrderID;
 
 
+select
+  count(CreationDate),
+  count(distinct CreationDate)
+from Orders;
